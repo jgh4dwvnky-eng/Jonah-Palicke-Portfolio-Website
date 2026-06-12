@@ -3,8 +3,31 @@ body{margin:0;font-family:Arial,sans-serif;background:#08111f;color:white;line-h
 nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:15px 40px;background:rgba(8,17,31,.9)}
 nav ul{display:flex;gap:20px;list-style:none}
 nav a{color:white;text-decoration:none}
-.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(#08111f,#12233f)}
-.hero h1{font-size:4rem}
+.hero {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(4, 12, 30, 0.65),
+            rgba(4, 12, 30, 0.75)
+        ),
+        url("hero-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.hero h1 {
+    color: white;
+    text-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
 .btn{display:inline-block;padding:12px 24px;background:#c9a227;color:#08111f;text-decoration:none;border-radius:6px}
 section{padding:100px 10%}
 h2{color:#c9a227}
